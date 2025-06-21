@@ -62,6 +62,10 @@ This histogram displays the distribution of protein content in health-tagged rec
 ### Interesting Aggregations 
 To examine whether recipes labeled as healthy differ nutritionally from others, I grouped the dataset by the is_health_tagged column and calculated the average values for key nutritional attributes: calories, total fat, sugar, and protein. The results show that healthy-tagged recipes tend to have slightly lower calories (419.87 vs. 430.71) and total fat (31.41g vs. 32.90g) compared to those not labeled as healthy, aligning with general expectations. However, the average sugar content is actually higher in healthy recipes (68.77g vs. 67.33g), which is unexpected. Additionally, non-healthy recipes show a slightly higher protein content on average (33.39g vs. 31.95g). These findings indicate that the trendy “healthy” tags may reflect specific dietary trends or labeling practices rather than consistent improvements across all nutritional metrics.
 
+|   is_health_tagged |   calories |   total_fat |   sugar |   protein |
+|-------------------:|-----------:|------------:|--------:|----------:|
+|                  0 |     430.71 |       32.9  |   67.33 |     33.39 |
+|                  1 |     419.87 |       31.41 |   68.77 |     31.95 |
 
 
 ## Framing a Prediction Problem  
